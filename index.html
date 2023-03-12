@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>
+            Memetics
+        </title>
+        <link rel="stylesheet" href="Home.css">
+        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <!-- <section class="Top">
+
+        </section> -->
+        <div>
+            <button id = "searchTab" class="tabButton" onclick="Options(event,'Search')">Search</button>
+            <button class="tabButton" onclick="Options(event,'Upload')">Upload</button>
+        </div>
+        <!-- w3-animate-opacity -->
+        <section id = "Search" class="TabContent ">
+            <!-- Load icon library -->
+            
+            <!-- The form -->
+            <form action="">
+                <label for="classNumber">Enter Class Number</label>
+                <input type="text" placeholder="Enter Class Number" name="classNumber" class="searchInput" size="30">
+                <input type="submit" name="Submit">
+            </form>
+
+        </section>
+        <section id = "Upload" class="TabContent ">
+            <form action="/action_page.php">
+                <input type="file" id="myFile" name="filename">
+                <input type="submit">
+              </form>
+              
+
+        </section>
+        <footer>
+            Tahj, Xiuyi,Arif, Fahad
+        </footer>
+    </body>
+</html>
+
+<script>
+    //  document.getElementById("Search").click();
+function Options(evt,id) {
+  var i;
+  var x = document.getElementsByClassName("TabContent");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+     
+  }
+  var tabButtons = document.getElementsByClassName("tabButton");
+  for(i = 0; i< tabButtons.length; i++)
+  {
+    tabButtons[i].className.replace("active", "")
+  }
+  
+  document.getElementById(id).style.display = "block";  
+  evt.currentTarget.className += " active";
+
+
+}
+
+  // Get the element with id="Search" and sets it as the default Tab
+  document.getElementById("Search").style.display = "block";
+  document.getElementById("searchTab").className += " active";
+</script>

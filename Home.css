@@ -1,0 +1,61 @@
+div
+{
+    background-color: grey;
+    border: 1px solid black;
+    /* height: 50px; */
+    
+}
+body
+{
+    background-color: green;
+    border: 1px solid black;
+    margin: 0px;
+    transform: scale(1.8);
+    transform-origin: 0 0;
+}
+button
+{
+    border: 1px solid rgb(0, 0, 0);
+    /* height: 50px; */
+    float: left;
+    background-color: dodgerblue;
+    margin: 0px;
+    transition: 0.3s;
+    width: 100px;
+}
+div, button
+{
+    height: 40px;    
+}
+button:hover
+{
+    background-color: rgb(72, 72, 72);
+    color: rgb(182, 181, 181);
+}
+button.active
+{
+    background-color: red;
+}
+
+section
+{
+    background-color: azure;
+    height: 100%;
+    display: none;
+    
+}
+section.Top
+{
+    height: 50%;
+}
+input.searchClass
+{
+    size: "50";
+}
+footer
+{
+    background-color: black;
+    color: white;
+    height: 20px;
+    text-align: center;
+}
